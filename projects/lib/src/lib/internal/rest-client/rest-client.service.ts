@@ -7,6 +7,7 @@ import { ObserveOptions, RestRequest } from '../../public';
 import { UrlParser } from '../../public/url-parser/url-parser';
 import { HttpRestClient } from '../../public/models/http-rest-client';
 
+// TODO Change to GrappaModule if possible
 @Injectable({ providedIn: 'root' })
 export class RestClientService<T> implements HttpRestClient<T> {
   constructor(private http: HttpClient) {

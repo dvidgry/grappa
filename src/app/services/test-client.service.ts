@@ -12,7 +12,7 @@ export class TestClientService {
   list: () => Observable<any>;
 
   @GET('/users', { query: true })
-  querySample: (queryParams: any) => Observable<any>;
+  querySample: (queryParams: { [ key: string ]: string }) => Observable<any>;
 
   @GET('/users/{0}', { observe: ObserveOptions.Response })
   find: (id: number) => Observable<any>;

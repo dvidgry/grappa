@@ -6,12 +6,12 @@ import { map } from 'rxjs/operators';
 import { AfterRequest, BeforeRequest, GET, POST, PUT, RestClient, ObserveOptions, RestRequest } from '@elemental-concept/grappa';
 
 @Injectable({ providedIn: 'root' })
-@RestClient('http://localhost:4200/assets')
+@RestClient('http://localhost:9090/')
 export class TestClientService {
-  @GET('/users.json')
+  @GET('/users')
   list: () => Observable<any>;
 
-  @GET('/users.json', { query: true })
+  @GET('/users', { query: true })
   querySample: (queryParams: any) => Observable<any>;
 
   @GET('/users/{0}', { observe: ObserveOptions.Response })

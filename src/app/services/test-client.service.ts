@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-// TODO Refactor imports
-import { AfterRequest, BeforeRequest, GET, POST, PUT, RestClient } from '../../../projects/lib/src/lib/public/decorators';
-import { ObserveOptions, RestRequest } from '../../../projects/lib/src/lib/public/models';
+import { AfterRequest, BeforeRequest, GET, POST, PUT, RestClient, ObserveOptions, RestRequest } from '@elemental-concept/grappa';
 
 @Injectable({ providedIn: 'root' })
 @RestClient('http://localhost:4200/assets')

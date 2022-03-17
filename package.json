@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "star-mock-server": "mockserver -p 8081 -m mockserver",
+    "start-mock-server": "mockserver -p 8081 -m mockserver",
     "start": "ng serve --port=4201",
-    "start-all": "npm run star-mock-server & npm run start",
+    "start-all": "npm run start-mock-server & npm run start",
     "build": "ng build lib --configuration production",
     "publish": "npm publish dist/lib",
     "test": "ng test --watch=false",
